@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KoinosKit — run a Koinos node, no command line</title>
+  <meta name="description" content="KoinosKit is a free desktop app that creates a Koinos wallet, burns KOIN to VHP, launches a block-producing Koinos node with Docker, and auto-returns a percentage of your block rewards." />
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta property="og:title" content="KoinosKit — run a Koinos node, no command line" />
+  <meta property="og:description" content="Wallet, KOIN→VHP burning, one-click node, and automatic reward returns. Free and open source." />
+  <meta property="og:image" content="https://koinoskit.site/img/node.png" />
+  <meta property="og:url" content="https://koinoskit.site/" />
+</head>
+<body>
+
+<header class="hero">
+  <nav class="nav container">
+    <div class="brand"><img src="img/icon.png" alt="" width="34" height="34" /><span>Koinos<b>Kit</b></span></div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#start">Get started</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/mikemilas/Koinos-Node" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+  <div class="container hero-inner">
+    <h1>Run a Koinos node.<br /><span class="grad">Earn KOIN. No command line.</span></h1>
+    <p class="sub">KoinosKit is a free desktop app that walks you from zero to producing blocks:
+    create a wallet, burn KOIN to VHP, launch the official Koinos node with one click, and
+    automatically re-invest a percentage of your rewards.</p>
+    <div class="cta">
+      <a id="dl-primary" class="btn primary big" href="https://github.com/mikemilas/Koinos-Node/releases/latest">⬇️ Download<span id="dl-primary-label"></span></a>
+      <a class="btn ghost big" href="https://github.com/mikemilas/Koinos-Node/releases/latest" rel="noopener">All downloads</a>
+    </div>
+    <p class="tiny" id="dl-version">Windows · macOS · Linux — free &amp; open source (MIT)</p>
+    <div class="dl-row" id="dl-all" hidden>
+      <a class="chip" id="dl-win" href="#" hidden>Windows .exe</a>
+      <a class="chip" id="dl-mac" href="#" hidden>macOS .dmg</a>
+      <a class="chip" id="dl-linux" href="#" hidden>Linux .AppImage</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="features" class="container">
+    <h2>Everything a solo block producer needs</h2>
+    <div class="cards">
+      <div class="card"><div class="ico">💳</div><h3>Wallet in seconds</h3>
+        <p>Generate a Koinos wallet locally — encrypted with your password, keys never leave your computer. Import an existing key any time, back up with one click.</p></div>
+      <div class="card"><div class="ico">🔥</div><h3>Burn KOIN → VHP</h3>
+        <p>Virtual Hash Power is your stake for producing blocks. Burn safely with a built-in liquid-KOIN buffer so you always keep mana to transact.</p></div>
+      <div class="card"><div class="ico">🖥️</div><h3>One-click node</h3>
+        <p>Runs the official Koinos microservices via Docker. Guided checklist covers everything — including registering your block-signing key on chain.</p></div>
+      <div class="card"><div class="ico">♻️</div><h3>Auto reward returns</h3>
+        <p>Pick a percentage of block rewards to return automatically: compound into VHP to keep producing, or send to any address. Full history included.</p></div>
+    </div>
+    <div class="callout">
+      <b>⚡ Quick sync built in.</b> Skip days of initial syncing — KoinosKit restores the official
+      Koinos Foundation chain snapshot (checksum-verified) so your node reaches the chain head in hours.
+    </div>
+  </section>
+
+  <section class="shots container">
+    <figure><img src="img/wallet.png" alt="KoinosKit wallet screen" loading="lazy" /><figcaption>Wallet setup</figcaption></figure>
+    <figure><img src="img/node.png" alt="KoinosKit node control screen" loading="lazy" /><figcaption>Node control &amp; block production checklist</figcaption></figure>
+    <figure><img src="img/returns.png" alt="KoinosKit reward returns screen" loading="lazy" /><figcaption>Automatic reward returns</figcaption></figure>
+  </section>
+
+  <section id="start" class="container">
+    <h2>Get started in 7 steps</h2>
+    <ol class="steps">
+      <li><b>Install Docker.</b> The node runs as Docker containers.
+        <a href="https://www.docker.com/products/docker-desktop/" rel="noopener">Docker Desktop</a> for Windows/macOS,
+        <a href="https://docs.docker.com/engine/install/" rel="noopener">Docker Engine</a> for Linux.
+        <span class="hint">Windows: Docker needs WSL 2 — if it complains, run <code>wsl --install --no-distribution</code> in an admin PowerShell and reboot.</span></li>
+      <li><b>Install KoinosKit.</b> Download above and run the installer.
+        <span class="hint">Windows SmartScreen shows an "unknown publisher" warning because the free build is unsigned — click <i>More info → Run anyway</i>. On macOS, right-click the app → Open the first time.</span></li>
+      <li><b>Create your wallet</b> and write down the private-key backup it shows you. Store it offline — it's the only way to recover your funds.</li>
+      <li><b>Fund it with KOIN</b> from an exchange, then <b>burn most of it to VHP</b> in the Burn tab. Keep ~10 KOIN liquid for mana (the Max button does this for you).</li>
+      <li><b>Start the node</b> (Node tab) with block production enabled, and use <b>⚡ Quick sync</b> to restore the official snapshot instead of syncing from scratch. Budget ~160&nbsp;GB free disk.</li>
+      <li><b>Register your signing key.</b> One click in the node checklist once the node has started.</li>
+      <li><b>Set your return percentage</b> in the Reward returns tab — e.g. compound 50% of rewards back into VHP. Done: your node earns while you sleep.</li>
+    </ol>
+  </section>
+
+  <section id="faq" class="container">
+    <h2>FAQ</h2>
+    <details><summary>Is it safe? Where are my keys?</summary>
+      <p>Your private key is generated on your machine, encrypted with your password (scrypt + AES-256-GCM), and never leaves it. There's no server, no telemetry — the app talks only to the Koinos RPC you configure. The code is open source on <a href="https://github.com/mikemilas/Koinos-Node" rel="noopener">GitHub</a>, so anyone can audit it.</p></details>
+    <details><summary>Why does Windows warn about an unknown publisher?</summary>
+      <p>The installers aren't code-signed (certificates cost hundreds of dollars a year). The warning is expected for unsigned open-source apps: click <i>More info → Run anyway</i>. You can also verify what you're running by building from source.</p></details>
+    <details><summary>How much KOIN do I need to produce blocks?</summary>
+      <p>Any amount of VHP participates, but more VHP means more frequent blocks. Whatever you burn, keep some KOIN liquid (~10 is comfortable) — mana from liquid KOIN pays for your transactions, and it recharges over time.</p></details>
+    <details><summary>How much disk space and bandwidth?</summary>
+      <p>The chain is tens of GB and grows. Quick sync downloads a ~60&nbsp;GB snapshot and needs roughly 160&nbsp;GB free during the restore (you can delete the rollback copy afterwards). A regular home connection is fine.</p></details>
+    <details><summary>Does the node keep running if I close the app?</summary>
+      <p>Yes — the node lives in Docker and keeps producing with the app closed. Automatic reward returns, however, are signed locally, so they only execute while the app is open with the wallet unlocked; pending rewards simply accumulate until then.</p></details>
+    <details><summary>What rewards can I expect?</summary>
+      <p>Koinos targets roughly 2% annual inflation paid to producers, with a bonus for burners relative to non-participants — your share depends on your VHP versus the network total. Producing also consumes VHP over time; the compounding return mode exists exactly to keep topping it up.</p></details>
+    <details><summary>Is there a testnet mode?</summary>
+      <p>Yes — switch to Harbinger in Settings and grab free tKOIN from the faucet in the <a href="https://discord.koinos.io" rel="noopener">Koinos Discord</a> to try everything risk-free.</p></details>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <div class="brand small"><img src="img/icon.png" alt="" width="24" height="24" /><span>Koinos<b>Kit</b></span></div>
+    <div class="foot-links">
+      <a href="https://github.com/mikemilas/Koinos-Node" rel="noopener">Source code</a>
+      <a href="https://github.com/mikemilas/Koinos-Node/releases" rel="noopener">Releases</a>
+      <a href="https://github.com/mikemilas/Koinos-Node/issues" rel="noopener">Report an issue</a>
+      <a href="https://koinos.io" rel="noopener">About Koinos</a>
+    </div>
+    <p class="tiny">KoinosKit is a free, MIT-licensed community tool. Not affiliated with or endorsed by Koinos Group or the Koinos Foundation.
+    It manages real cryptocurrency — always back up your private key, and never share it with anyone.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
