@@ -3,7 +3,7 @@
 // Fills the download buttons from the latest GitHub release. Falls back to
 // the releases page if the API is unreachable or rate-limited.
 (async function () {
-  const RELEASES = "https://github.com/mikemilas/Koinos-Node/releases/latest";
+  const RELEASES = "https://github.com/therexdev/Koinos-Node/releases/latest";
   const os = detectOs();
   const primary = document.getElementById("dl-primary");
   const primaryLabel = document.getElementById("dl-primary-label");
@@ -11,7 +11,7 @@
 
   let release;
   try {
-    const res = await fetch("https://api.github.com/repos/mikemilas/Koinos-Node/releases/latest", {
+    const res = await fetch("https://api.github.com/repos/therexdev/Koinos-Node/releases/latest", {
       headers: { Accept: "application/vnd.github+json" },
     });
     if (!res.ok) throw new Error(String(res.status));

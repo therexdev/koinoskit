@@ -2,7 +2,7 @@
 
 Static website for **KoinosKit** (Koinos Node Desktop) — served with GitHub
 Pages at https://koinoskit.site. The app itself lives in
-[mikemilas/Koinos-Node](https://github.com/mikemilas/Koinos-Node); download
+[therexdev/Koinos-Node](https://github.com/therexdev/Koinos-Node); download
 buttons on the site pull the latest release automatically from the GitHub API.
 
 ## One-time setup (repo owner)
@@ -19,7 +19,7 @@ buttons on the site pull the latest release automatically from the GitHub API.
    | A     | `@`  | `185.199.109.153` |
    | A     | `@`  | `185.199.110.153` |
    | A     | `@`  | `185.199.111.153` |
-   | CNAME | `www` | `mikemilas.github.io` |
+   | CNAME | `www` | `therexdev.github.io` |
 
 4. Back in *Settings → Pages*, wait for the DNS check to pass, then tick
    **Enforce HTTPS** (the certificate can take a few minutes to issue).
