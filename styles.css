@@ -18,9 +18,12 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-.container { max-width: 1060px; margin: 0 auto; padding: 0 22px; }
+img { max-width: 100%; height: auto; }
+
+.container { max-width: 1060px; margin: 0 auto; padding: 0 22px; width: 100%; }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -141,7 +144,22 @@ footer { border-top: 1px solid var(--border); margin-top: 70px; background: var(
 .foot-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; font-size: 14px; margin-bottom: 14px; }
 .foot .tiny { max-width: 640px; margin: 0 auto; }
 
-@media (max-width: 620px) {
-  .nav-links { gap: 14px; font-size: 13px; }
-  section { padding-top: 46px; }
+@media (max-width: 780px) {
+  .nav-links { gap: 16px; font-size: 13px; }
+}
+
+@media (max-width: 640px) {
+  .container { padding: 0 16px; }
+  .nav { padding-top: 16px; padding-bottom: 16px; }
+  .nav-links { display: none; }        /* one-page site — links live in the scroll */
+  .hero-inner { padding-top: 30px; }
+  .sub { font-size: 15px; margin: 14px auto 24px; }
+  .cta { gap: 10px; }
+  .btn.big { padding: 12px 20px; font-size: 15px; }
+  .hero-shot { margin-top: 30px; border-radius: 12px; box-shadow: 0 16px 44px rgba(0, 0, 0, 0.5); }
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 22px; margin-bottom: 20px; }
+  .card { padding: 18px; }
+  .steps li { padding: 12px 0 12px 46px; font-size: 14.5px; }
+  .steps li::before { width: 30px; height: 30px; font-size: 14px; }
 }
