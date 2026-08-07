@@ -78,6 +78,16 @@ h1 { font-size: clamp(30px, 5.2vw, 52px); line-height: 1.15; letter-spacing: -0.
 }
 .chip:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
 
+.hero-shot {
+  margin: 48px auto 0;
+  max-width: 960px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(56, 189, 248, 0.15);
+}
+.hero-shot img { display: block; width: 100%; height: auto; }
+
 /* sections */
 section { padding: 64px 0 8px; }
 h2 { font-size: 28px; margin-bottom: 26px; text-align: center; letter-spacing: -0.3px; }
