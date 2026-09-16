@@ -33,3 +33,15 @@ to `main` redeploys the site automatically.
   dependencies)
 - `img/` — app screenshots and icon (from the app repository)
 - `CNAME` — custom-domain binding for GitHub Pages
+
+## Producer signer
+
+`producer-signer/` is the Kondor signing page for KoinosKit's external producer
+wallets, including saved 24-hour drafts for dual boot. It requests signatures
+without broadcasting; users return the signed JSON to the desktop app.
+
+These assets come from `therexdev/Koinos-Node` via
+`node scripts/export-producer-signer.js ../koinoskit/producer-signer`.
+The export includes the pinned Koilib 9.3.0 browser bundle, Kondor SDK, licenses,
+and `manifest.json` with SHA-256 hashes. Update the desktop source and re-export
+all files together; do not hand-edit the deployed validator.

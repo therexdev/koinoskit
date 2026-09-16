@@ -1,0 +1,16 @@
+{
+  "format": "kai-producer-signer-v1",
+  "koilibVersion": "9.3.0",
+  "kondorCommit": "e319c5f190ec6d4c3c644270ded85a1256cd8e7c",
+  "files": {
+    "index.html": "761d343970993c9a753a0a039ee7921a2840eef6eeb6bde4867e18db1da81c2b",
+    "signer.css": "98019dea2fda3e4ddd9c5032b81e4081dda9993587342da509a0fffd7fe7a035",
+    "signer.js": "c880c0b19ba45128a20a0c7f1b676dde465fcfb95d72e774d0b667fc794b4f08",
+    "validation.js": "ede9ad97ab8d10f7844c09b8c95feb1f9fd8bfe8292122fb7f64084bf2e1cb4c",
+    "abis.js": "a5d1086f1da49a9d82a960f0ef2b18d5c47e458eebbef92f4e76e67dddea03d6",
+    "kondor.min.js": "d7325a8118f2125c47ff7a2e06cf6b06b41964e2984d2107322e392aebf14fe7",
+    "NOTICE.txt": "4e493dff9535e21ae8295dd03526e29448213db3be04f16fa00bf175b0bb71de",
+    "koinos.min.js": "184f416b92197ed975b3f8bf9f05e1c7e0f091f27fd9285a6b26836a9980b462",
+    "koinos.min.js.LICENSE.txt": "082e58b2379d70941b98a93f8dc58da339de9ef4083db48a59041398950db2c7"
+  }
+}
